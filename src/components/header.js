@@ -1,0 +1,56 @@
+import React from 'react';
+import { Container, Nav, Offcanvas } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
+import SearchBarSection from './search';
+
+function NavigationBar() {
+  /*  const [search, setSearch] = useState('');
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  }; */
+  return (
+    <div>
+      {['md'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="navbar" fixed="top">
+          <Container>
+            <Navbar.Brand href="/" className="brand-logo">
+              <img src={logo} alt="h-logo" width="100px" height="50px" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Menu
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="flex justify-between me-auto menu">
+                  <Nav.Link as={Link} to="/">
+                    Om oss
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/erbjudanden">
+                    Offers
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/kontakt">
+                    Contact
+                  </Nav.Link>
+                </Nav>
+                <SearchBarSection />
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </div>
+  );
+}
+
+export default NavigationBar;

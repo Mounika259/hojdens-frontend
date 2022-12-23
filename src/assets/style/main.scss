@@ -1,0 +1,112 @@
+@import './variables';
+@import './mixins/main';
+@import './partials/main';
+
+html,
+body {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  position: sticky;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 0.9px;
+  position: 'sticky';
+}
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  background-color: #e7e6e6ec;
+}
+.h-logo {
+  justify-content: left;
+}
+.navbar {
+  height: 12%;
+  padding: 15px;
+  background: #ffffff;
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  display: flex;
+  justify-content: space-between;
+}
+.brand-logo {
+  margin: 20px;
+}
+.search-group {
+  width: 270px;
+  font-size: 15px;
+  background-color: #d3d3d34a;
+}
+a.nav-link {
+  margin: 0 20px;
+  color: #000000;
+}
+a.nav-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.carousel-items {
+  margin-top: 40px;
+  margin-left: 20px;
+  padding-top: 50px;
+  text-align: center;
+  border-radius: #000;
+  justify-content: space-between;
+}
+.main-offer {
+  margin-top: 90px;
+  padding-top: 70px;
+  text-align: center;
+  justify-content: space-between;
+}
+.special-offer {
+  margin: 0px 30px;
+  justify-content: space-between;
+}
+.footer {
+  justify-content: space-between;
+  color: #acaeb0;
+  font-size: 16px;
+
+  font-weight: 600;
+  background-color: #000;
+}
+.footer-body {
+  margin-top: 20px;
+}
+.footer-text {
+  padding: 0 10px;
+}
+a {
+  color: inherit;
+  padding-right: 10px;
+  text-decoration: none;
+}
+a:hover {
+  color: aliceblue;
+}
+.footer-copyright {
+  font-size: 12px;
+}
+.footer-link {
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.footer-address {
+  text-align: center;
+  padding: 10px;
+}
+.card-offer {
+  margin: 20px;
+  background: #e81a1a;
+}
+.cardGrid {
+  display: flex;
+  padding: 20px;
+}
+
+.offer-title {
+  font-size: 18px;
+}
