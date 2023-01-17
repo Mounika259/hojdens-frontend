@@ -15,7 +15,12 @@ function NavigationBar() {
   return (
     <div>
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="navbar" fixed="top">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="navbar menu"
+          fixed="top"
+        >
           <Container>
             <Navbar.Brand href="/" className="brand-logo">
               <img src={logo} alt="h-logo" width="100px" height="50px" />
@@ -32,11 +37,11 @@ function NavigationBar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="flex justify-between me-auto menu">
+                <Nav className="flex me-auto menu">
                   <Nav.Link as={Link} to="/">
                     Om oss
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/erbjudanden">
+                  <Nav.Link as={Link} to="/erbjudande">
                     Offers
                   </Nav.Link>
                   <Nav.Link as={Link} to="/kontakt">

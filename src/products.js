@@ -52,7 +52,21 @@ export const Products = [
     id: 8,
     title: 'meat balls',
     category: 'meat',
-    price: '65.9',
-    tags: 'meat beef ready food pack frozen',
+    price: '45.9',
+    tags: 'meat beef ready food pack frozen balls',
+  },
+  {
+    id: 9,
+    title: 'meat mince',
+    category: 'meat',
+    price: '89.9',
+    tags: 'meat mince beef ready food pack frozen',
+  },
+  {
+    id: 10,
+    title: 'cashews',
+    category: 'dry fruits',
+    price: '85.9',
+    tags: 'healthy snack fruits dry cashews',
   },
 ];

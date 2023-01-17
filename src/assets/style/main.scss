@@ -11,6 +11,7 @@ body {
   font-family: 'Cabin', sans-serif;
   letter-spacing: 0.9px;
   position: 'sticky';
+  overflow-x: hidden;
 }
 .app {
   display: flex;
@@ -23,18 +24,18 @@ body {
 }
 .navbar {
   height: 12%;
-  padding: 15px;
   background: #ffffff;
   font-size: $titleFontSize;
   font-weight: $titleFontWeight;
   display: flex;
   justify-content: space-between;
 }
-.brand-logo {
-  margin: 20px;
+.menu {
+  justify-content: space-between;
 }
 .search-group {
   width: 270px;
+  margin: 10px;
   font-size: 15px;
   background-color: #d3d3d34a;
 }
@@ -47,36 +48,31 @@ a.nav-link:hover {
   text-decoration: underline;
 }
 .carousel-items {
-  margin-top: 40px;
-  margin-left: 20px;
+  margin: 20px;
   padding-top: 50px;
   text-align: center;
-  border-radius: #000;
+  background-color: #000000;
+  overflow: hidden;
   justify-content: space-between;
 }
-.main-offer {
-  margin-top: 90px;
-  padding-top: 70px;
-  text-align: center;
-  justify-content: space-between;
+.carousel-items > .item > img {
+  width: 100%;
+  object-fit: cover;
 }
 .special-offer {
-  margin: 0px 30px;
+  margin: 0px 20px;
   justify-content: space-between;
 }
 .footer {
-  justify-content: space-between;
   color: #acaeb0;
   font-size: 16px;
-
+  margin-top: auto;
   font-weight: 600;
   background-color: #000;
 }
 .footer-body {
   margin-top: 20px;
-}
-.footer-text {
-  padding: 0 10px;
+  justify-content: space-between;
 }
 a {
   color: inherit;
@@ -93,20 +89,27 @@ a:hover {
   padding-left: 50px;
   margin-left: 50px;
 }
-
 .footer-address {
   text-align: center;
   padding: 10px;
 }
-.card-offer {
-  margin: 20px;
-  background: #e81a1a;
-}
 .cardGrid {
+  margin: 10px;
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.offer-title {
-  font-size: 18px;
+.offer-banner {
+  display: flex;
+  border-radius: 0;
+}
+.card-offer-left {
+  background-color: #e81a1a;
+  color: #f8eee1;
+  height: 400px;
+}
+.card-offer-right {
+  background-color: #f8eee1;
+  color: #e81a1a;
+  height: 400px;
 }

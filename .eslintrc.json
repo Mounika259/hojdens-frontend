@@ -27,7 +27,6 @@
   "plugins": ["prettier"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    /* "react/destructuring-assignment": ["enabled", "always"], */
     "react/prop-types": "off",
     "global-require": 0,
     "prettier/prettier": 0,

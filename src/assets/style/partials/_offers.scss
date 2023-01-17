@@ -1,0 +1,22 @@
+.offers-header {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  background: #e81a1a;
+  color: #f8eee1;
+}
+.offer {
+  padding-right: 10rem;
+  padding-left: 20rem;
+}
+.call {
+  display: flex;
+  line-height: 3;
+}
+.offers-title {
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  text-decoration: underline;
+}

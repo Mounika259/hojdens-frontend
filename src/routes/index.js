@@ -9,7 +9,7 @@ function RoutesApp() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/erbjudanden" element={<Offers />} />
+        <Route path="/erbjudande" element={<Offers />} />
         <Route path="/kontakt" element={<Contact />} />
         {/* <Route path="/search/:keyword" element={<Home />} />  */}
       </Routes>

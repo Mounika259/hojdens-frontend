@@ -27,13 +27,17 @@ function Footer() {
             <br />
             Oxhagsgatan 75, 561 50 Huskvarna
             <br />
-            <a className="footer-telephone" href="#">
+            <a href="tel:+46-36-333-17-20" className="footer-telephone">
               <i className="bi bi-telephone-fill" />
             </a>{' '}
             036-333 17 20
           </p>
           <p>
-            <a href="https://www.facebook.com/HojdensOxnehaga/">
+            <a
+              href="https://www.facebook.com/HojdensOxnehaga/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="bi bi-facebook" />
             </a>
             Follow us on facebook
@@ -41,7 +45,7 @@ function Footer() {
         </div>
       </div>
       <div className="card-footer footer-copyright text-center">
-        ©Copyright Hojdens Öxenhaga
+        ©Copyright Hojdens Öxnehaga
       </div>
     </div>
   );
