@@ -1,0 +1,16 @@
+.carousel-items {
+  margin: 20px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #000000;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.carousel-items > .item > img {
+  width: 100%;
+  object-fit: cover;
+}
+.special-offer {
+  margin: 0px 20px;
+  justify-content: space-between;
+}

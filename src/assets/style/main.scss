@@ -10,7 +10,6 @@ body {
   position: sticky;
   font-family: 'Cabin', sans-serif;
   letter-spacing: 0.9px;
-  position: 'sticky';
   overflow-x: hidden;
 }
 .app {
@@ -18,98 +17,4 @@ body {
   flex-flow: column nowrap;
   min-height: 100vh;
   background-color: #e7e6e6ec;
-}
-.h-logo {
-  justify-content: left;
-}
-.navbar {
-  height: 12%;
-  background: #ffffff;
-  font-size: $titleFontSize;
-  font-weight: $titleFontWeight;
-  display: flex;
-  justify-content: space-between;
-}
-.menu {
-  justify-content: space-between;
-}
-.search-group {
-  width: 270px;
-  margin: 10px;
-  font-size: 15px;
-  background-color: #d3d3d34a;
-}
-a.nav-link {
-  margin: 0 20px;
-  color: #000000;
-}
-a.nav-link:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-.carousel-items {
-  margin: 20px;
-  padding-top: 50px;
-  text-align: center;
-  background-color: #000000;
-  overflow: hidden;
-  justify-content: space-between;
-}
-.carousel-items > .item > img {
-  width: 100%;
-  object-fit: cover;
-}
-.special-offer {
-  margin: 0px 20px;
-  justify-content: space-between;
-}
-.footer {
-  color: #acaeb0;
-  font-size: 16px;
-  margin-top: auto;
-  font-weight: 600;
-  background-color: #000;
-}
-.footer-body {
-  margin-top: 20px;
-  justify-content: space-between;
-}
-a {
-  color: inherit;
-  padding-right: 10px;
-  text-decoration: none;
-}
-a:hover {
-  color: aliceblue;
-}
-.footer-copyright {
-  font-size: 12px;
-}
-.footer-link {
-  padding-left: 50px;
-  margin-left: 50px;
-}
-.footer-address {
-  text-align: center;
-  padding: 10px;
-}
-.cardGrid {
-  margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.offer-banner {
-  display: flex;
-  border-radius: 0;
-}
-.card-offer-left {
-  background-color: #e81a1a;
-  color: #f8eee1;
-  height: 400px;
-}
-.card-offer-right {
-  background-color: #f8eee1;
-  color: #e81a1a;
-  height: 400px;
 }

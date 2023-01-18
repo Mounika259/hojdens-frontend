@@ -1,0 +1,25 @@
+.navbar {
+  height: 12%;
+  background: #ffffff;
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  justify-content: space-between;
+}
+.search-group {
+  width: 270px;
+  margin: 10px;
+  font-size: 15px;
+  background-color: #d3d3d34a;
+}
+a.nav-link {
+  margin: 0 20px;
+  color: #000000;
+}
+a.nav-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}

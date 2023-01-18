@@ -1,0 +1,30 @@
+.footer {
+  color: #acaeb0;
+  font-size: 16px;
+  margin-top: auto;
+  font-weight: 600;
+  background-color: #000;
+}
+.footer-body {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+a {
+  color: inherit;
+  padding-right: 10px;
+  text-decoration: none;
+}
+a:hover {
+  color: aliceblue;
+}
+.footer-copyright {
+  font-size: 12px;
+}
+.footer-link {
+  padding-left: 50px;
+  margin-left: 50px;
+}
+.footer-address {
+  text-align: center;
+  padding: 10px;
+}

@@ -7,7 +7,6 @@ function Banner() {
       <div className="col-md-6">
         <Card className="text-center card-offer-left">
           <Card.Body>
-            <Card.Title className="offer-title">Special Offers</Card.Title>
             <Card.Text>
               With supporting text below as a natural lead-in to additional
               content.
@@ -18,11 +17,12 @@ function Banner() {
       <div className="col-md-6">
         <Card className="text-center card-offer-right">
           <Card.Body>
-            <Card.Title className="offer-title">Special Offers</Card.Title>
-            <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </Card.Text>
+            <img
+              src={require('../assets/images/c2.jpg')}
+              alt="item"
+              width={400}
+              height={300}
+            />
           </Card.Body>
         </Card>
       </div>

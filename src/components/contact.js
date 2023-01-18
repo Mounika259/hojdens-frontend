@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import Footer from './footer';
-import NavigationBar from './header';
+import NavigationBar from './navbar';
 
 function Contact() {
   /*  const callAction = () => {

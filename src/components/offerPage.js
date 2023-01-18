@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './footer';
-import NavigationBar from './header';
+import NavigationBar from './navbar';
 
 function OfferPage() {
   /*  const callAction = () => {

@@ -1,0 +1,9 @@
+.cardGrid {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  //  justify-content: space-between;
+}
+.card-body {
+  padding: inherit;
+}

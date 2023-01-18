@@ -1,9 +1,10 @@
 import React from 'react';
-import CardGrid from './card/cardGrid';
-import Banner from './card/banner';
+import CardGrid from './cardGrid';
+import Banner from './banner';
 import CarouselComponent from './carousel';
 import Footer from './footer';
-import NavigationBar from './header';
+import NavigationBar from './navbar';
+import ShowMore from './showMore';
 
 function Home() {
   return (
@@ -16,6 +17,9 @@ function Home() {
         <CardGrid data="noCategory" />
         <Banner />
         <CardGrid data="vegetables" />
+        <CardGrid data="snack" />
+        <CardGrid data="meat" />
+        <ShowMore />
       </div>
       <div className="row footer-row">
         <Footer />

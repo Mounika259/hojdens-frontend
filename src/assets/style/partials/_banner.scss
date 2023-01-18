@@ -1,0 +1,21 @@
+.offer-banner {
+  margin: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.card-offer-left {
+  padding: 20px;
+  font-size: 40px;
+  font-weight: $titleFontWeight;
+  background-color: #e81a1a;
+  color: #f8eee1;
+  height: 400px;
+}
+.card-offer-right {
+  padding: 20px;
+  background-color: #f8eee1;
+  color: #e81a1a;
+  height: 400px;
+}
