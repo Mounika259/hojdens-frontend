@@ -1,4 +1,5 @@
 import React from 'react';
+import SubscribeForm from './subscribe';
 
 function Footer() {
   return (
@@ -43,6 +44,9 @@ function Footer() {
             Follow us on facebook
           </p>
         </div>
+      </div>
+      <div className="row">
+        <SubscribeForm />
       </div>
       <div className="card-footer footer-copyright text-center">
         ©Copyright Hojdens Öxnehaga

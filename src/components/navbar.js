@@ -6,12 +6,6 @@ import logo from '../assets/images/logo.png';
 import SearchBarSection from './search';
 
 function NavigationBar() {
-  /*  const [search, setSearch] = useState('');
-  let inputHandler = (e) => {
-    //convert input text to lower case
-    var lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-  }; */
   return (
     <div>
       {['md'].map((expand) => (

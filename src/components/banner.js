@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 function Banner() {
   return (
-    <div className="offer-banner">
+    <div className="offer-banner my-4">
       <div className="col-md-6">
         <Card className="text-center card-offer-left">
           <Card.Body>

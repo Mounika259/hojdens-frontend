@@ -1,15 +1,27 @@
+/* eslint-disable no-console */
+/* eslint-disable react/destructuring-assignment */
 import React, { useState } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Products } from '../products';
 
 function SearchBarSection() {
   const navigate = useNavigate();
-  const [query, setQuery] = useState('');
-  console.log(query);
+  const [query, setQuery] = useState({ data: '' });
+
+  const getItems = () => {
+    let items = [];
+    items = Products.filter(
+      (product) =>
+        product.category.includes(query) || product.tags.includes(query)
+    );
+    console.log(items);
+    return items;
+  };
   const searchHandler = (e) => {
     e.preventDefault();
-
-    if (query.trim()) {
+    getItems();
+    if (query.trim) {
       navigate(`/search/${query}`);
     } else {
       navigate(`/search`);
@@ -36,6 +48,11 @@ function SearchBarSection() {
           </Form>
         </div>
       </div>
+      {/*  <div>
+        <Row>
+          <Col className="cardGrid">{getItems()}</Col>
+        </Row>
+      </div> */}
     </div>
   );
 }

@@ -16,8 +16,8 @@ function Home() {
       <div className="row special-offer">
         <CardGrid data="noCategory" />
         <Banner />
-        <CardGrid data="vegetables" />
-        <CardGrid data="snack" />
+        {/*  <CardGrid data="vegetables" /> */}
+        <CardGrid data="snacks" />
         <CardGrid data="meat" />
         <ShowMore />
       </div>

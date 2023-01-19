@@ -1,17 +1,17 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-console */
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Products } from '../products';
-/* import ShowMore from '../showMore';
- import { Products } from '../../products';
-import ShowMore from '../showMore'; */
 
 function CardGrid(data) {
+  // const [category, setCategory] = useState('');
   console.log(data);
   const getColumnsForRow = () => {
     let items = [];
     // eslint-disable-next-line react/destructuring-assignment
     if (data.data === 'noCategory') {
-      items = Products.slice(0, 6).map((product) => (
+      items = Products.slice(0, 5).map((product) => (
         <div key={product.id}>
           <Card className="text-center">
             <Card.Body>
@@ -28,6 +28,8 @@ function CardGrid(data) {
     }
     // eslint-disable-next-line react/destructuring-assignment
     if (data.data === 'vegetables') {
+      /* setCategory('vegetables');
+      console.log(category); */
       const vegetables = Products.filter(
         (product) => product.category === 'vegetables'
       );
@@ -48,6 +50,7 @@ function CardGrid(data) {
     }
     // eslint-disable-next-line react/destructuring-assignment
     if (data.data === 'snacks') {
+      // setCategory('cookies');
       const snacks = Products.filter(
         (product) => product.category === 'snacks'
       );
@@ -65,9 +68,11 @@ function CardGrid(data) {
           </Card>
         </div>
       ));
+      console.log(items);
     }
     // eslint-disable-next-line react/destructuring-assignment
     if (data.data === 'meat') {
+      // setCategory('meat');
       const meat = Products.filter((product) => product.category === 'meat');
       items = meat.map((meatItems) => (
         <div key={meatItems.id}>
@@ -88,6 +93,7 @@ function CardGrid(data) {
   };
   return (
     <div>
+      {data.data !== 'noCategory' ? <h3>{data.data}</h3> : null}
       <div className="row">
         <Row>
           <Col className="cardGrid">{getColumnsForRow()}</Col>
