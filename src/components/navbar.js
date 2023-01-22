@@ -9,12 +9,7 @@ function NavigationBar() {
   return (
     <div>
       {['md'].map((expand) => (
-        <Navbar
-          key={expand}
-          expand={expand}
-          className="navbar menu"
-          fixed="top"
-        >
+        <Navbar key={expand} expand={expand} className="menu" fixed="top">
           <Container>
             <Navbar.Brand href="/" className="brand-logo">
               <img src={logo} alt="h-logo" width="100px" height="50px" />

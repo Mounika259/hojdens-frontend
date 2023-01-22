@@ -5,13 +5,15 @@ export const Products = [
     category: 'fruits',
     price: '20.99',
     tags: 'fruits apple red royal gala fresh',
+    images: require('./assets/images/apple.jpg'),
   },
   {
     id: 2,
     title: 'banana',
     category: 'fruits',
     price: '15.4',
-    tags: 'fruits apple red royal gala fresh',
+    tags: 'fruits banana fresh',
+    images: require('./assets/images/banana.jpg'),
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const Products = [
     category: 'vegetables',
     price: '9.80',
     tags: 'vegetables carrots kilo small fresh',
+    images: require('./assets/images/carrot.jpg'),
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const Products = [
     category: 'dry fruits',
     price: '55.4',
     tags: 'dry fruits nuts healthy snack pack fresh',
+    images: require('./assets/images/dates.jpg'),
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const Products = [
     category: 'poultry',
     price: '35.4',
     tags: 'pack 24 12 4 12 poultry eggs fresh',
+    images: require('./assets/images/egg.jpg'),
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const Products = [
     category: 'sea food',
     price: '55.4',
     tags: 'fish sea food salmon siamese pack frozen fresh',
+    images: require('./assets/images/fish.jpg'),
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ export const Products = [
     category: 'snacks',
     price: '25.4',
     tags: 'cookies kids favorite digestive sugar snacks',
+    images: require('./assets/images/digestive.jpg'),
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ export const Products = [
     category: 'meat',
     price: '45.9',
     tags: 'meat beef ready food pack frozen balls',
+    images: require('./assets/images/meatballs.jpg'),
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export const Products = [
     category: 'meat',
     price: '89.9',
     tags: 'meat mince beef ready food pack frozen',
+    images: require('./assets/images/meatMince.jpg'),
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ export const Products = [
     category: 'dry fruits',
     price: '85.9',
     tags: 'healthy snack fruits dry cashews',
+    images: require('./assets/images/cashews.jpg'),
   },
   {
     id: 11,
@@ -75,13 +85,15 @@ export const Products = [
     category: 'chicken',
     price: '49.9',
     tags: 'chicken bone boneless frozen',
+    images: require('./assets/images/chicken.jpg'),
   },
   {
     id: 12,
-    title: 'chicken bone less',
+    title: 'chicken boneless',
     category: 'meat',
     price: '49.9',
     tags: 'chicken bone boneless frozen',
+    images: require('./assets/images/chickenboneless.jpg'),
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ export const Products = [
     category: 'meat',
     price: '99.9',
     tags: 'chicken bone bone frozen',
+    images: require('./assets/images/chicken.jpg'),
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ export const Products = [
     category: 'soft drinks',
     price: '19.2',
     tags: 'coke drinks soft cola diet',
+    images: require('./assets/images/chickenboneless.jpg'),
   },
   {
     id: 15,
@@ -117,12 +131,36 @@ export const Products = [
     category: 'snacks',
     price: '15.2',
     tags: 'snacks chips potato',
+    images: require('./assets/images/chips.jpg'),
   },
   {
     id: 16,
     title: 'chocolate',
     category: 'snacks',
     price: '15.2',
-    tags: 'snacks chips potato',
+    tags: 'snacks chocolate potato',
+    images: require('./assets/images/marabou.jpg'),
+  },
+  {
+    id: 17,
+    title: 'cookies',
+    category: 'snacks',
+    price: '15.2',
+    tags: 'snacks cookies',
+  },
+  {
+    id: 18,
+    title: 'cake',
+    category: 'snacks',
+    price: '25.2',
+    tags: 'snacks cookies cake',
+  },
+  {
+    id: 19,
+    title: 'fish',
+    category: 'meat',
+    price: '15.2',
+    tags: 'fish meat',
+    images: require('./assets/images/fish.jpg'),
   },
 ];

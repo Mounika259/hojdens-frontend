@@ -4,7 +4,6 @@ import Banner from './banner';
 import CarouselComponent from './carousel';
 import Footer from './footer';
 import NavigationBar from './navbar';
-import ShowMore from './showMore';
 
 function Home() {
   return (
@@ -19,7 +18,7 @@ function Home() {
         {/*  <CardGrid data="vegetables" /> */}
         <CardGrid data="snacks" />
         <CardGrid data="meat" />
-        <ShowMore />
+        {/* <ShowMore /> */}
       </div>
       <div className="row footer-row">
         <Footer />

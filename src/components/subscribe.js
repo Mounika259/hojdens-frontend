@@ -33,7 +33,7 @@ function SubscribeForm() {
               <Form.Control
                 aria-label="Your email address"
                 name="email_address"
-                placeholder="Subscribe via e-mail"
+                placeholder="Subscribe your e-mail"
                 required
                 type="email"
                 // onChange={handleEmailChange}
