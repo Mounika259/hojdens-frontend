@@ -23,12 +23,15 @@ function SearchBarSection() {
   };
   const searchHandler = (e) => {
     e.preventDefault();
-    getItems();
-    /*   if (query.trim) {
-      navigate(`/search/${query}`);
+    const result = getItems();
+    console.log(result);
+    setSearchResult(result);
+
+    if (query.trim) {
+      navigate(`/SearchResult`, { state: { data: result } });
     } else {
       navigate(`/search`);
-    } */
+    }
   };
   // eslint-disable-next-line no-console
   console.log(query);
@@ -52,25 +55,6 @@ function SearchBarSection() {
         </div>
       </div>
       <br />
-
-      {searchResult !== [] ? (
-        <div>
-          {searchResult.map((item) => (
-            <div key={item.id}>
-              <Card className="text-center">
-                <Card.Body className="card-body">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxaPhzScJPYZs8LPQygV9kcYHOPYu0EhkOIpvvIlRriw&s"
-                    alt="item"
-                  />
-                  <Card.Title className="offer-title">{item.title}</Card.Title>
-                  <Card.Text>{item.price}</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </div>
-      ) : null}
     </div>
   );
 }
